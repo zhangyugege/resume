@@ -160,4 +160,11 @@ body {
     z-index: 10000;
     opacity: 0.2;
 }
-
+@media screen and (min-width: 600px) {
+    .p1{
+        font-size: 2.8rem !important;
+    }
+    .p3 {
+       font-size: 1.0rem !important;
+    }
+}
