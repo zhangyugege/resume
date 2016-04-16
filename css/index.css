@@ -1,0 +1,163 @@
+body {
+    width:100%;
+    overflow:hidden;
+}
+.page {
+    width:100%;
+    height:100%;
+    position:absolute;
+    font-size:2rem;
+    text-align:center;
+    font-family: '黑体';
+    font-weight: bold;
+    background-color: pink;
+}
+.p1{
+    position: relative;
+    width: 100%;
+    top: 25%;
+    font-size: 4rem;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+.p2{
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+.p3{
+    position: relative;
+    width: 100%;
+    font-size: 1.6rem;
+
+}
+.hide {
+    display:none;
+}
+.page-current {
+    z-index:1;
+}
+.img_3 {
+    height:auto;
+    width:25px;
+    position:absolute;
+    left:50%;
+    top:93%;
+    margin-left:-12px;
+}
+
+.page-1-1 .p3{
+    top: 28%;
+}
+.page-1-1 .p2{
+    top: 30%;
+}
+.page-1-1 p:nth-child(4){
+    top: 32%;
+}
+.page-1-1 p:nth-child(5){
+    top: 34%;
+    font-size: 1.6rem;
+}
+
+.page-2-1  div{
+    width: 10rem;
+    height: 10rem;
+    border: solid  white;
+    border-radius: 5rem ;
+    background-color: white;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    margin-left: -5rem;
+    overflow:hidden ;
+}
+.page-2-1  div img{
+    width: 10rem;
+    height: 10rem;
+}
+.page-2-1  .p2{
+    top: 30%;
+}
+.page-2-1  .p3{
+    top: 35%;
+}
+
+.page-3-1 .p3{
+    top:30%;
+}
+.page-3-1 .p3 .tag{
+
+    color: white;
+    margin-bottom: 0.6rem;
+}
+.page-3-1 .p3 .tag .tag-ele{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    display: inline;
+    margin: 0 3px;
+    background-color:#d45d5c;
+    border:solid 0.1rem #d45d5c;
+    border-radius: 0.4rem;
+    padding: 0.15rem;
+    font-weight: 100;
+}
+.page-3-1 .p3 .tag .little{
+    background-color:#FF6A6A;
+    border:solid 0.1rem #FF6A6A;
+}
+
+.page-4-1 p:nth-child(2){
+    top: 30%;
+}
+.page-4-1 p:nth-child(3){
+    top: 32%;
+}
+.page-4-1 p:nth-child(4){
+    top: 33%;
+}
+.page-4-1 p:nth-child(5){
+    top: 34%;
+}
+.page-4-1 p:nth-child(6){
+    top: 36%;
+}
+.page-4-1 p:nth-child(7){
+    top: 38%;
+}
+.page-4-1 p:nth-child(8){
+    top: 40%;
+}
+.page-4-1 p:nth-child(odd){
+    text-shadow: 5px 5px 5px #ffffff;
+}
+.page-5-1 .p2{
+    top: 30%;
+}
+.page-5-1 .p3{
+    top: 33%;
+}
+.page-5-1 .link{
+    position: relative;
+    width: 100%;
+    top: 38%;
+}
+.page-5-1 .link a{
+    display: inline;
+}
+.page-5-1 .link a img{
+    margin: 0 auto;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+}
+
+#canvas{
+    width:100%;
+    height: 50%;
+    position: fixed;
+    z-index: 10000;
+    opacity: 0.2;
+}
+
