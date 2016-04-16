@@ -7,28 +7,39 @@
     const towards = { up:1, right:2, down:3, left:4};
     var isAnimating = false;
 
-    s=window.innerHeight/500;
-    ss=250*(1-s);
+    document.body.onmousewheel = function(event) {
+        event = event || window.event;
+        if(event.wheelDelta==-120){
+           Up();
 
-    $('.wrap').css('-webkit-transform','scale('+s+','+s+') translate(0px,-'+ss+'px)');
+        }else {
+            Down();
+        }
 
+    };
     document.addEventListener('touchmove',function(event){
         event.preventDefault(); },false);
 
     $(document).swipeUp(function(){
+        Up();
+    })
+
+    $(document).swipeDown(function(){
+        Down();
+    })
+
+    function Up(){
         if (isAnimating) return;
         last.row = now.row;
         last.col = now.col;
         if (last.row != max) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}
-    })
-
-    $(document).swipeDown(function(){
+    }
+    function Down(){
         if (isAnimating) return;
         last.row = now.row;
         last.col = now.col;
         if (last.row!=1) { now.row = last.row-1; now.col = 1; pageMove(towards.down);}
-    })
-
+    }
     $(document).swipeLeft(function(){
         if (isAnimating) return;
         last.row = now.row;
